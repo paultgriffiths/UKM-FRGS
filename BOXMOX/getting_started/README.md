@@ -99,15 +99,15 @@ copy [this file](https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/do_
 
 make a note of where this Github repo is stored on your Windows machine.
 
-### Running BOXMOX
+## Running BOXMOX
 
 The model can be run from a Jupyter notebook or an R script, or it can be run from the Ubuntu VM.  
 
-#### Set up Python on Windows or Set up R on Windows
+### Set up Python on Windows or Set up R on Windows
 
 You should give this some thought.  I think you're wise to choose one to start with.  In the end, it doesn't really matter.
 
-##### Python
+### Python
 
 Python can be used to for data analysis
 
@@ -117,7 +117,7 @@ Python can be used to for data analysis
 
 - start a Jupyter notebook and check if [this notebook[(https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/Python_scripts/Run_BOXMOX_and_plot_output.ipynb) work.
 
-#### R scripts
+### R scripts
 
 R can be used to for data analysis
 
