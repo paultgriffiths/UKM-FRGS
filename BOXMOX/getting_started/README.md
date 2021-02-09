@@ -15,94 +15,97 @@ http://davidcarslaw.github.io/openair/reference/polarPlot.html
 
 In fact, here is a plot I made of Shahrul's ozone data
 
-![alt text](https://github.com/ptg21/boxmox-isoprene/blob/master/getting_started/Rplot.png)
+<img src="https://github.com/ptg21/boxmox-isoprene/blob/master/getting_started/Rplot.png" width="300"> 
 
 
-SETUP
-=====
+BOXMOX is written specifically for Unix machines.  It uses software that is not normally available on Windows.  We'll first set up Windows to be able to run BOXMOX.
 
-We'll use a Cygwin UNIX environment for our work.  This has standard unix tools, loads of install options and will run on windows
+### SETUP
 
-Best of all, you can always delete the whole cygwin directory and start again.
+#### Setup Ubuntu on Windows
 
-install R and Rstudio if you like https://download1.rstudio.org/RStudio-1.1.442.exe 
+- Download Ubuntu 20.04 LTS from the Microsoft Store
 
-and 
+Follow the instructions here to install the required Windows Subsytem and restart the machine, as per the instructions on
 
-https://cran.rstudio.com/bin/windows/base/R-3.4.4-win.exe
-
+https://docs.microsoft.com/en-us/windows/wsl/install-on-server
 
 
-install cygwin from http://www.cygwin.com
+#### Setup your installation of Ubuntu on Windows
 
-install notepad++
+Get familiar with the Ubuntu system on Windows.  This will be a big part of the project.
 
-FIRST TIME WITH CYGWIN
-======================
+After restarting the laptop, start the Ubuntu VM by going to the Start Menu and clicking on Ubuntu 20.04 LTS.  This will start a terminal, and then ask you to
 
-copy the setup.exe to c:\cygwin_setup
+- create a username and password
 
-Double click on setup.
+Do this then you should
 
-I use c:\cygwin for the main directory and c:\cygwin_downloads for the cygwin_downloads
+- update the Ubuntu VM
 
-Optional packages required for boxmox
+do ```sudo apt update``` to update the Ubuntu VM
 
-byacc
-bison
-wget
-gfortran
-make
-patch
-flex
+do ```sudo apt upgrade``` to upgrade the software to the latest version
 
-COPYING THE FILES YOU NEED
-==========================
+This will take a while. After it finishes, 
 
-Open windows explorer, go to c:\cygwin64
+- install the required software
 
-In c:\cygwin64 there are a bunch of directories
+``` sudo apt install bison byacc flex wget gfortran make```
 
-Go to home/ and then into the user directory, and copy the [bashrc](../blob/master/bashrc)
-and install_boxmox.bash file to there.
+When this completes successfully you're ready to install BOXMOX
 
-Start cygwin
+##### Setup BOXMOX on Ubuntu
 
-Move the bashrc file to .bashrc by typing
+- Download the BOXMOX installer from https://boxmodeling.meteo.physik.uni-muenchen.de/downloads/boxmox.html
 
-```mv bashrc .bashrc```
+- copy it to the home directory on your Ubuntu VM 
 
-Make sure it's picked up by typing
+```cp /mnt/c/Users/<USER>/Downloads/install_BOXMOX.bash ~/```
 
-```bash```
+replacing <USER> with whatever your Windows username is.
+  
+ - install BOXMOX on your Ubuntu VM
+ 
+- install BOXMOX
 
-Now make the boxmox install script executable by typing
+run 
 
 ```chmod +x install_BOXMOX.bash```
 
-Now run the install script by typing
-
 ```./install_BOXMOX.bash```
 
-Hopefully things will happen, and at the end it'll say Good to go.
+<img src="https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/getting_started/copying_boxmox_to_home_directory.png" width="300" > 
 
-RUNNING A BOX MODEL
-===================
+- after completion, the BOXMOX install script tells you to modify your .bashrc to add the required lines.  Use a text editor e.g. nano to do this.
 
-```cd boxmox/bin```
+``` nano .bashrc```
 
-```bash prepare_BOXMOX_mechanism MOZART_4```
+#### Set up BOXMOX for box model work
 
-```bash new_BOXMOX_experiment_from_example pbl_diurnal_cycle```
+```cd ~/boxmox/boxmox/bin/```
+
+```./prepare_BOXMOX_mechanism MOZART_4```
+
+```./new_BOXMOX_experiment_from_example pbl_diurnal_cycle```
+
+```cd pbl_diurnal_cycle/```
 
 ```./MOZART_4.exe```
 
-VISUALISING THE DATA
-====================
+#### Set up Python on Windows or Set up R on Windows
 
-You can use RStudio for this.
+##### Python
 
-Open RStudio, go to the boxmox/boxmox/bin/pbl_diurnal_cycle directory and then open the plot.R file
+- download a copy of Anaconda for Windows https://docs.anaconda.com/anaconda/install/windows/
+
+- set up an analysis environment.  Launch Anaconda Navigator and create a new environment and then make sure the following packages are available
+
+pandas
+
+jupyter
+
+
 
 NONE OF THIS IS MY WORK AND YOU SHOULD CREDIT THE ORIGINAL AUTHORS NOT ME!
 ==========================================================================
