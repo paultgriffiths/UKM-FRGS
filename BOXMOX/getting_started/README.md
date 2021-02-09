@@ -20,9 +20,9 @@ In fact, here is a plot I made of Shahrul's ozone data
 
 BOXMOX is written specifically for Unix machines.  It uses software that is not normally available on Windows.  We'll first set up Windows to be able to run BOXMOX.
 
-### SETUP
+## SETUP
 
-#### Setup Ubuntu on Windows
+### Setup Ubuntu on Windows
 
 - Download Ubuntu 20.04 LTS from the Microsoft Store
 
@@ -31,7 +31,7 @@ Follow the instructions here to install the required Windows Subsytem and restar
 https://docs.microsoft.com/en-us/windows/wsl/install-on-server
 
 
-#### Setup your installation of Ubuntu on Windows
+### Setup your installation of Ubuntu on Windows
 
 Get familiar with the Ubuntu system on Windows.  This will be a big part of the project.
 
@@ -55,7 +55,7 @@ This will take a while. After it finishes,
 
 When this completes successfully you're ready to install BOXMOX
 
-##### Setup BOXMOX on Ubuntu
+#### Setup BOXMOX on Ubuntu
 
 - Download the BOXMOX installer from https://boxmodeling.meteo.physik.uni-muenchen.de/downloads/boxmox.html
 
@@ -81,7 +81,7 @@ run
 
 ``` nano .bashrc```
 
-#### Set up BOXMOX for box model work
+##### Set up BOXMOX for box model work
 
 ```cd ~/boxmox/boxmox/bin/```
 
@@ -99,7 +99,7 @@ copy [this file](https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/do_
 
 make a note of where this Github repo is stored on your Windows machine.
 
-#### Running BOXMOX
+### Running BOXMOX
 
 The model can be run from a Jupyter notebook or an R script, or it can be run from the Ubuntu VM.  
 
