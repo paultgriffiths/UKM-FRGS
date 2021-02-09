@@ -21,89 +21,11 @@ In fact, here is a plot I made of Shahrul's ozone data
 SETUP
 =====
 
-We'll use a Cygwin UNIX environment for our work.  This has standard unix tools, loads of install options and will run on windows
+Download Ubuntu 20.04 LTS from the Microsoft Store
 
-Best of all, you can always delete the whole cygwin directory and start again.
+Follow the instructions here to install the required Windows Subsytem and restart the machine, as per the instructions on
 
-install R and Rstudio if you like https://download1.rstudio.org/RStudio-1.1.442.exe 
-
-and 
-
-https://cran.rstudio.com/bin/windows/base/R-3.4.4-win.exe
-
-
-
-install cygwin from http://www.cygwin.com
-
-install notepad++
-
-FIRST TIME WITH CYGWIN
-======================
-
-copy the setup.exe to c:\cygwin_setup
-
-Double click on setup.
-
-I use c:\cygwin for the main directory and c:\cygwin_downloads for the cygwin_downloads
-
-Optional packages required for boxmox
-
-byacc
-bison
-wget
-gfortran
-make
-patch
-flex
-
-COPYING THE FILES YOU NEED
-==========================
-
-Open windows explorer, go to c:\cygwin64
-
-In c:\cygwin64 there are a bunch of directories
-
-Go to home/ and then into the user directory, and copy the [bashrc](../blob/master/bashrc)
-and install_boxmox.bash file to there.
-
-Start cygwin
-
-Move the bashrc file to .bashrc by typing
-
-```mv bashrc .bashrc```
-
-Make sure it's picked up by typing
-
-```bash```
-
-Now make the boxmox install script executable by typing
-
-```chmod +x install_BOXMOX.bash```
-
-Now run the install script by typing
-
-```./install_BOXMOX.bash```
-
-Hopefully things will happen, and at the end it'll say Good to go.
-
-RUNNING A BOX MODEL
-===================
-
-```cd boxmox/bin```
-
-```bash prepare_BOXMOX_mechanism MOZART_4```
-
-```bash new_BOXMOX_experiment_from_example pbl_diurnal_cycle```
-
-```./MOZART_4.exe```
-
-VISUALISING THE DATA
-====================
-
-You can use RStudio for this.
-
-Open RStudio, go to the boxmox/boxmox/bin/pbl_diurnal_cycle directory and then open the plot.R file
-
+https://docs.microsoft.com/en-us/windows/wsl/install-on-server
 NONE OF THIS IS MY WORK AND YOU SHOULD CREDIT THE ORIGINAL AUTHORS NOT ME!
 ==========================================================================
 
