@@ -105,10 +105,16 @@ pandas
 
 jupyter
 
+- start a Jupyter notebook and check if the scripts work.
 
+#### R scripts
 
-NONE OF THIS IS MY WORK AND YOU SHOULD CREDIT THE ORIGINAL AUTHORS NOT ME!
-==========================================================================
+see R_scripts and this file http://localhost:8888/edit/OneDrive/Documents/GitHub/UKM-FRGS/BOXMOX/R_scripts/run_boxmox_ubuntu.R
+
+## CREDITS
+
+### NONE OF THIS IS MY WORK AND YOU SHOULD CREDIT THE ORIGINAL AUTHORS NOT ME!
+
 
 REMEMBER THAT BOXMOX IS THE WORK of Christoph Knote (LMU Munich, Germany) / Jérôme Barré (ECMWF, UK).
 Register via 
