@@ -93,21 +93,33 @@ run
 
 ```./MOZART_4.exe```
 
+copy [this file](https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/do_model_run.sh) to your home directory on the Ubuntu VM and make it executable
+
+```chmod +x do_model_run.sh```
+
+make a note of where this Github repo is stored on your Windows machine.
+
+#### Running BOXMOX
+
+The model can be run from a Jupyter notebook or an R script, or it can be run from the Ubuntu VM.  
+
 #### Set up Python on Windows or Set up R on Windows
+
+You should give this some thought.  I think you're wise to choose one to start with.  In the end, it doesn't really matter.
 
 ##### Python
 
+Python can be used to for data analysis
+
 - download a copy of Anaconda for Windows https://docs.anaconda.com/anaconda/install/windows/
 
-- set up an analysis environment.  Launch Anaconda Navigator and create a new environment and then make sure the following packages are available
+- set up an analysis environment.  Launch Anaconda Navigator and create a new environment and then make sure the following packages are installed: pandas & jupyter
 
-pandas
-
-jupyter
-
-- start a Jupyter notebook and check if the scripts work.
+- start a Jupyter notebook and check if [this notebook[(https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/Python_scripts/Run_BOXMOX_and_plot_output.ipynb) work.
 
 #### R scripts
+
+R can be used to for data analysis
 
 see R_scripts and this file https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/R_scripts/run_boxmox_ubuntu.R
 
