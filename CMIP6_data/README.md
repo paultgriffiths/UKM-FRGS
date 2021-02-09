@@ -3,7 +3,7 @@ Things to review
 
 * What is CMIP6
 
-https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained
+[https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained]
 
 
 * use of acccmip6 for investigating which data are on CMIP6 archive
