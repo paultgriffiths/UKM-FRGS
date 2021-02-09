@@ -39,3 +39,4 @@ vignettes/*.pdf
 .Renviron
 BOXMOX/.DS_Store
 .DS_Store
+BOXMOX/.ipynb_checkpoints/Run_BOXMOX_and_plot_output-checkpoint.ipynb
