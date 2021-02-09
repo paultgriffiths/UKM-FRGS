@@ -15,7 +15,7 @@ http://davidcarslaw.github.io/openair/reference/polarPlot.html
 
 In fact, here is a plot I made of Shahrul's ozone data
 
-![alt text](https://github.com/ptg21/boxmox-isoprene/blob/master/getting_started/Rplot.png)
+![alt text]<img src="https://github.com/ptg21/boxmox-isoprene/blob/master/getting_started/Rplot.png" width="300"> 
 
 
 ### SETUP
@@ -59,7 +59,7 @@ run
 
 ```./install_BOXMOX.bash```
 
-![Ubuntu VM on Windows](https://github.com/ptg21/UKM-FRGS/blob/master/BOXMOX/getting_started/install_boxmox.png)
+![Ubuntu VM on Windows]<img src="https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/getting_started/copying_boxmox_to_home_directory.png" width="300" > 
 
 - after completion, the BOXMOX install script tells you to modify your .bashrc to add the required lines.  Use a text editor e.g. nano to do this.
 
