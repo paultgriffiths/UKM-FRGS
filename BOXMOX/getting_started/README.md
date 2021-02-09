@@ -18,14 +18,65 @@ In fact, here is a plot I made of Shahrul's ozone data
 ![alt text](https://github.com/ptg21/boxmox-isoprene/blob/master/getting_started/Rplot.png)
 
 
-SETUP
-=====
+### SETUP
 
-Download Ubuntu 20.04 LTS from the Microsoft Store
+#### Setup Ubuntu on Windows
+
+- Download Ubuntu 20.04 LTS from the Microsoft Store
 
 Follow the instructions here to install the required Windows Subsytem and restart the machine, as per the instructions on
 
 https://docs.microsoft.com/en-us/windows/wsl/install-on-server
+
+- create a username and password
+
+- update the Ubuntu VM
+
+do ```sudo apt update``` to update the Ubuntu VM
+
+do ```sudo apt upgrade``` to upgrade the software to the latest version
+
+- install the required software
+
+``` sudo apt install bison byacc flex wget gfortran make```
+
+
+- Download the BOXMOX installer from https://boxmodeling.meteo.physik.uni-muenchen.de/downloads/boxmox.html
+
+- copy it to the home directory on your Ubuntu VM 
+
+```cp /mnt/c/Users/<USER>/Downloads/install_BOXMOX.bash ~/```
+
+replacing <USER> with whatever your Windows username is.
+  
+ - install BOXMOX on your Ubuntu VM
+ 
+- install BOXMOX
+
+run 
+
+```chmod +x install_BOXMOX.bash```
+
+```./install_BOXMOX.bash```
+
+![Ubuntu VM on Windows](https://github.com/ptg21/UKM-FRGS/blob/master/BOXMOX/getting_started/install_boxmox.png)
+
+- after completion, the BOXMOX install script tells you to modify your .bashrc to add the required lines.  Use a text editor e.g. nano to do this.
+
+``` nano .bashrc```
+
+
+
+#### Set up Python on Windows or Set up R on Windows
+
+##### Python
+
+- download a copy of Anaconda for Windows https://docs.anaconda.com/anaconda/install/windows/
+
+- set up an analysis environment
+
+
+
 NONE OF THIS IS MY WORK AND YOU SHOULD CREDIT THE ORIGINAL AUTHORS NOT ME!
 ==========================================================================
 
