@@ -18,6 +18,8 @@ In fact, here is a plot I made of Shahrul's ozone data
 <img src="https://github.com/ptg21/boxmox-isoprene/blob/master/getting_started/Rplot.png" width="300"> 
 
 
+BOXMOX is written specifically for Unix machines.  It uses software that is not normally available on Windows.  We'll first set up Windows to be able to run BOXMOX.
+
 ### SETUP
 
 #### Setup Ubuntu on Windows
@@ -28,7 +30,16 @@ Follow the instructions here to install the required Windows Subsytem and restar
 
 https://docs.microsoft.com/en-us/windows/wsl/install-on-server
 
+
+#### Setup your installation of Ubuntu on Windows
+
+Get familiar with the Ubuntu system on Windows.  This will be a big part of the project.
+
+After restarting the laptop, start the Ubuntu VM by going to the Start Menu and clicking on Ubuntu 20.04 LTS.  This will start a terminal, and then ask you to
+
 - create a username and password
+
+Do this then you should
 
 - update the Ubuntu VM
 
@@ -36,10 +47,15 @@ do ```sudo apt update``` to update the Ubuntu VM
 
 do ```sudo apt upgrade``` to upgrade the software to the latest version
 
+This will take a while. After it finishes, 
+
 - install the required software
 
 ``` sudo apt install bison byacc flex wget gfortran make```
 
+When this completes successfully you're ready to install BOXMOX
+
+##### Setup BOXMOX on Ubuntu
 
 - Download the BOXMOX installer from https://boxmodeling.meteo.physik.uni-muenchen.de/downloads/boxmox.html
 
@@ -65,7 +81,17 @@ run
 
 ``` nano .bashrc```
 
+#### Set up BOXMOX for box model work
 
+```cd ~/boxmox/boxmox/bin/```
+
+```./prepare_BOXMOX_mechanism MOZART_4```
+
+```./new_BOXMOX_experiment_from_example pbl_diurnal_cycle```
+
+```cd pbl_diurnal_cycle/```
+
+```./MOZART_4.exe```
 
 #### Set up Python on Windows or Set up R on Windows
 
@@ -73,7 +99,11 @@ run
 
 - download a copy of Anaconda for Windows https://docs.anaconda.com/anaconda/install/windows/
 
-- set up an analysis environment
+- set up an analysis environment.  Launch Anaconda Navigator and create a new environment and then make sure the following packages are available
+
+pandas
+
+jupyter
 
 
 
