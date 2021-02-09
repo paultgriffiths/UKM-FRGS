@@ -1,22 +1,28 @@
 #!/bin/bash
 # this should be put in the home directory on the Ubuntu machine
+# it's designed that there's a directory on the windows partition
+# that holds the input files
+# and the output files
 
-boxmox=/home/ptg21/boxmox/boxmox/bin/
+boxmox=boxmox/boxmox/bin/
+
 expt=$1
 model=$2
 win_dir=$3
-output_concs=$4
+input_dir=$4
+output_dir=$5
 
 echo "COPY ACROSS FILES"
-sleep 5
-cp ${win_dir}/BOXMOX.nml ${boxmox}/${expt}/
-cp ${win_dir}/InitialConditions.csv ${boxmox}/${expt}/
-cp ${win_dir}/Background.csv ${boxmox}/${expt}/
-cp ${win_dir}/Environment.csv ${boxmox}/${expt}/
-cd  ${boxmox}/${expt}/
+cp ${win_dir}/${input_dir}/BOXMOX.nml ${boxmox}/${expt}/
+cp ${win_dir}/${input_dir}/InitialConditions.csv ${boxmox}/${expt}/
+cp ${win_dir}/${input_dir}/Background.csv ${boxmox}/${expt}/
+cp ${win_dir}/${input_dir}/Environment.csv ${boxmox}/${expt}/
+cd ${boxmox}/${expt}/
+
+sleep 2
 echo "RUN MODEL"
-sleep 5
 ./${model}.exe
+
+sleep 2
 echo "COPY BACK OUTPUT"
-sleep 5
-mv ${model}.conc ${win_dir}/${output_concs}
+mv ${model}.conc ${win_dir}/${output_dir}
