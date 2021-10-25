@@ -69,13 +69,13 @@ This will take a while. After it finishes,
 
 - install the required software
 
-*if using Ubuntu 18.04*
+  + *if using Ubuntu 18.04*
 
-``` sudo apt install bison yacc flex wget gfortran make```
+  ``` sudo apt install bison yacc flex wget gfortran make```
 
-*if using Ubuntu 20.04*
+  + *if using Ubuntu 20.04*
 
-``` sudo apt install bison byacc flex wget gfortran make```
+  ``` sudo apt install bison byacc flex wget gfortran make```
 
 When this completes successfully you're ready to install BOXMOX
 
@@ -91,28 +91,30 @@ Make sure you can edit and save a file using nano https://askubuntu.com/question
 
 - Download the BOXMOX installer by registering at https://www2.acom.ucar.edu/forms/boxmox-download - they will then send you a download link
 
-*On Ubuntu 18.04*
-
-- copy it to the home directory on your Ubuntu VM 
-
-```cp /mnt/c/Users/<USER>/Downloads/install_BOXMOX.bash ~/```
-
-replacing <USER> with whatever your Windows username is.
-
-*On Ubuntu 20.04*
+- Copy this file to your home directory on the Ubuntu VM
   
- Copy the link that was sent to you
+  *On Ubuntu 18.04*
+
+  - copy it to the home directory on your Ubuntu VM 
+
+  ```cp /mnt/c/Users/<USER>/Downloads/install_BOXMOX.bash ~/```
+
+  replacing <USER> with whatever your Windows username is.
+
+  *On Ubuntu 20.04*
+  
+ - Copy the link that was sent to you
  
- On the Ubuntu app, type wget --paste in link using right click--
+    On the Ubuntu app, type wget --paste in link using right click--
   
-  then modify the install_BOXMOX.bash file
+    then modify the install_BOXMOX.bash file
   
-```nano install_BOXMOX.bash```
+    ```nano install_BOXMOX.bash```
   
-  go to line 40 and replace   ```/usr/lib``` with ```/usr/lib/x86_64-linux-gnu``` 
+    go to line 40 and replace   ```/usr/lib``` with ```/usr/lib/x86_64-linux-gnu``` 
   
 
- - install BOXMOX on your Ubuntu VM
+- install BOXMOX on your Ubuntu VM
  
 - install BOXMOX
   
