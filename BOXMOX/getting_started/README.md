@@ -31,15 +31,33 @@ Follow the instructions here to install the required Windows Subsytem and restar
 https://docs.microsoft.com/en-us/windows/wsl/install-on-server
 
 
+- Download MobaXTerm for Windows
+
+https://mobaxterm.mobatek.net
+
+- Download Notepad++ 
+
+https://notepad-plus-plus.org
+
+
 ### Setup your installation of Ubuntu on Windows
 
-Get familiar with the Ubuntu system on Windows.  This will be a big part of the project.
+Get familiar with the Ubuntu system on Windows.  This will be a big part of the project.  Superpowers!
 
 After restarting the laptop, start the Ubuntu VM by going to the Start Menu and clicking on Ubuntu 20.04 LTS.  This will start a terminal, and then ask you to
 
 - create a username and password
 
-Do this then you should
+Now open MobaXTerm. If all is well you should find that there are new "User sessions" - 
+
+<img src="https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/getting_started/mobaxterm_1.png" width="300" > 
+
+after clicking it should look like this
+
+<img src="https://github.com/paultgriffiths/UKM-FRGS/blob/main/BOXMOX/getting_started/mobaxterm_2.png" width="300" > 
+
+
+Now
 
 - update the Ubuntu VM
 
@@ -51,23 +69,53 @@ This will take a while. After it finishes,
 
 - install the required software
 
+*if using Ubuntu 18.04*
+
+``` sudo apt install bison yacc flex wget gfortran make```
+
+*if using Ubuntu 20.04*
+
 ``` sudo apt install bison byacc flex wget gfortran make```
 
 When this completes successfully you're ready to install BOXMOX
 
+### Familiarisation with important Ubuntu details
+
+Most of the normal windows operations (copying/moving files etc) can be done from the command line using Ubuntu.
+
+The most important thing for this project at this stage is to be able to edit a text file.
+
+Make sure you can edit and save a file using nano https://askubuntu.com/questions/54221/how-to-edit-files-in-a-terminal-with-nano
+
 #### Setup BOXMOX on Ubuntu
 
-- Download the BOXMOX installer from https://boxmodeling.meteo.physik.uni-muenchen.de/downloads/boxmox.html
+- Download the BOXMOX installer by registering at https://www2.acom.ucar.edu/forms/boxmox-download - they will then send you a download link
+
+*On Ubuntu 18.04*
 
 - copy it to the home directory on your Ubuntu VM 
 
 ```cp /mnt/c/Users/<USER>/Downloads/install_BOXMOX.bash ~/```
 
 replacing <USER> with whatever your Windows username is.
+
+*On Ubuntu 20.04*
   
+ Copy the link that was sent to you
+ 
+ On the Ubuntu app, type wget --paste in link using right click--
+  
+  then modify the install_BOXMOX.bash file
+  
+```nano install_BOXMOX.bash```
+  
+  go to line 40 and replace   ```/usr/lib``` with ```/usr/lib/x86_64-linux-gnu``` 
+  
+
  - install BOXMOX on your Ubuntu VM
  
 - install BOXMOX
+  
 
 run 
 
